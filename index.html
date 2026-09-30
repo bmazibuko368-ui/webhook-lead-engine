@@ -15,6 +15,15 @@
 </head>
 <body>
 
+  <input type="text" id="bot_check" style="display:none">
+const payload = {
+  fullName: document.getElementById('name').value,
+  phone: document.getElementById('phone').value,
+  service: document.getElementById('service').value,
+  botCheck: document.getElementById('bot_check').value, // Added for spam filtering
+  submittedAt: new Date().toLocaleString('en-ZA')
+};
+  
   <div class="card">
     <h2>Get a Service Callout</h2>
     <form id="lead-form">
